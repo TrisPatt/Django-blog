@@ -12,7 +12,7 @@ class Post(models.Model):
     updated_on = models.DateTimeField(auto_now_add=True)
     
     content = models.TextField()
-    exerpt = models.TextField(blank=True)
+    excerpt = models.TextField(blank=True)
     
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
